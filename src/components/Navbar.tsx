@@ -1,6 +1,6 @@
 import Link from "next/link"
 import MobileNav from "./MobileNav"
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs"
+import { SignedIn, UserButton } from "@clerk/nextjs"
 
 const Navbar = () => {
     return (
@@ -14,11 +14,6 @@ const Navbar = () => {
                 <SignedIn>
                     <UserButton />
                 </SignedIn>
-                <SignedOut>
-                    <p>
-                        test
-                    </p>
-                </SignedOut>
 
                 <MobileNav />
             </div>

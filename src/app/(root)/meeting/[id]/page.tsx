@@ -1,8 +1,8 @@
 interface ParamsContext {
-    params: { id: string }
+    params: Promise<{ id: string }>
 }
-const Meeting = ({ params }: ParamsContext) => {
-    const { id: meetingId } = params;
+const Meeting = async ({ params }: ParamsContext) => {
+    const { id: meetingId } = await params;
     return (
         <div>Meeting : #{meetingId}</div>
     )
