@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar"
 import Sidebar from "@/components/Sidebar"
 import StreamClientProvider from "@/providers/StreamClientProvider"
 
-const HomeLayout = ({ children }: { children: React.ReactNode }) => {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <main className="relative">
             <StreamClientProvider>
@@ -20,4 +20,4 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
     )
 }
 
-export default HomeLayout
+export default RootLayout
