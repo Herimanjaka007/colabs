@@ -1,3 +1,4 @@
+import '@stream-io/video-react-sdk/dist/css/styles.css';
 import Navbar from "@/components/Navbar"
 import Sidebar from "@/components/Sidebar"
 import StreamClientProvider from "@/providers/StreamClientProvider"

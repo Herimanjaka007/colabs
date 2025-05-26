@@ -3,6 +3,7 @@
 import { DeviceSettings, useCall, VideoPreview } from "@stream-io/video-react-sdk"
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import Loader from "./Loader";
 
 interface MeetingSetupPropTypes {
     setIsSetupComplete: (isSetupComplete: boolean) => void;
@@ -32,9 +33,9 @@ const MeetingSetup = ({ setIsSetupComplete }: MeetingSetupPropTypes) => {
 
 
     return (
-        <section className="flex-center flex-col gap-3 text-white">
+        <section className="flex-center h-screen w-full flex-col gap-3 text-white">
             <h1 className="text-2xl font-bold">Setup</h1>
-            <VideoPreview />
+            <VideoPreview StartingCameraPreview={Loader} />
             <div className="flex-center gap-3 h-16 ">
                 <label htmlFor="seetings" className="cursor-pointer flex-center gap-2 font-medium">
                     <input
