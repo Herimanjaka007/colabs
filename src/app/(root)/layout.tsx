@@ -2,6 +2,12 @@ import '@stream-io/video-react-sdk/dist/css/styles.css';
 import Navbar from "@/components/Navbar"
 import Sidebar from "@/components/Sidebar"
 import StreamClientProvider from "@/providers/StreamClientProvider"
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Collabs_",
+    description: "Collaborative video calling app",
+};
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
     return (
